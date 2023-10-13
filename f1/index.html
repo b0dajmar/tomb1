@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+	<title>
+		
+	</title>
+	<meta lang="hu">
+	<meta charset="UTF-8">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<meta name="viewport" content="Width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" ">
+	
+	</style>
+</head>
+<body>
+   
+ 
+
+   <script>
+      let tomb = [1,2,3];
+		function plusz(){
+			let ad = document.getElementById("in").value;
+			tomb.push(ad);
+		}
+
+        function b1(){
+			
+
+			document.getElementById("d").innerHTML = tomb[0];
+        }
+		function b2(){
+		
+
+			document.getElementById("d").innerHTML = tomb[1];
+        }
+		function b3(){
+		
+
+			document.getElementById("d").innerHTML = tomb[2];
+        }
+		function mind(){
+		
+			ki ="";
+			for( let i in tomb){
+				ki += " " + tomb[i]
+			}
+			document.getElementById("d").innerHTML = ki;
+		}
+   </script>
+    <button onclick="b1">1.</button>
+	<button onclick="b2">2.</button>
+	<button onclick="b3">3.</button>
+	<button onclick="mind">Összes elem</button>
+	<label for="in" >Megadhtó érték</label>
+	<input type="text" id="in">
+   <div id="d"></div>
+
+   
+</body>
