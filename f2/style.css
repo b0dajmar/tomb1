@@ -1,0 +1,12 @@
+body{
+    background-color:brown ;
+    margin: auto;
+}
+#elements{
+    padding: 10%;
+}
+.kartya{
+    font-style: italic;
+    margin:auto;
+    background-color: grey;
+}

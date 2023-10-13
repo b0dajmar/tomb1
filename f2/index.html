@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+	<title>
+		
+	</title>
+	<meta lang="hu">
+	<meta charset="UTF-8">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<meta name="viewport" content="Width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	
+
+    
+</header>
+</head>
+<body>
+    <div id="content">
+        <div class="input-div">
+            <input type="text" id="text">
+            <button type="submit" onclick="getInputValue()">Submit</button>
+        </div>
+        <div id="elements"></div>
+    </div>
+    <script>
+        let adatok = [];
+        function getInputValue(){
+            let input = document.getElementById("text").value;
+            
+            if(input == ""){
+
+            }
+            else{
+                adatok.push(input);
+            }
+            document.getElementById("text").style.display = "none";
+
+        }
+        function write(){
+            let ki ="";
+            document.getElementById("elements").innerHTML ='<div class="kartya">';
+            for(let i in adatok){
+                ki += " "+ adatok[i] + " ";
+            }
+            document.getElementById("elements").innerHTML +=ki + '</div>' ;
+
+        }
+
+    </script>
+
+
+</body>
